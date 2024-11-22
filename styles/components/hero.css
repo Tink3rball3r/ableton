@@ -1,0 +1,210 @@
+.hero {
+	margin-top: 5rem;
+}
+
+.hero__links {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 1rem;
+	padding: 2rem 0;
+	width: 90%;
+	margin: 0 auto;
+}
+.hero__link {
+	font-size: var(--text-sm);
+}
+
+.hero__bg {
+	width: 90%;
+	height: 35rem;
+	display: grid;
+	place-content: center;
+	background-image: url(/hero.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.hero__title {
+	width: 15rem;
+	-webkit-animation: fill 1s ease forwards 2.5s;
+	animation: fill 1s ease forwards 2.5s;
+}
+
+.hero__title path {
+	stroke: #ff764d;
+}
+
+.hero__title path:nth-child(1) {
+	/* why is this the last letter if meant to be the first??? */
+	/* n */
+
+	stroke-dasharray: 190.4530029296875;
+	stroke-dashoffset: 190.4530029296875;
+	-webkit-animation: lineAnimation 1s ease forwards 1.8s;
+	animation: lineAnimation 1s ease forwards 1.8s;
+}
+.hero__title path:nth-child(2) {
+	/* o */
+	stroke-dasharray: 167.42568969726562;
+	stroke-dashoffset: 167.42568969726562;
+	-webkit-animation: lineAnimation 1s ease forwards 1.5s;
+	animation: lineAnimation 1s ease forwards 1.5s;
+}
+.hero__title path:nth-child(3) {
+	/* t */
+	stroke-dasharray: 149.42955017089844;
+	stroke-dashoffset: 149.42955017089844;
+	-webkit-animation: lineAnimation 1s ease forwards 1.2s;
+	animation: lineAnimation 1s ease forwards 1.2s;
+}
+.hero__title path:nth-child(4) {
+	/* e */
+	stroke-dasharray: 208.0506134033203;
+	stroke-dashoffset: 208.0506134033203;
+	-webkit-animation: lineAnimation 1s ease forwards 0.9s;
+	animation: lineAnimation 1s ease forwards 0.9s;
+}
+.hero__title path:nth-child(5) {
+	/* l */
+	stroke-dasharray: 112.96001434326172;
+	stroke-dashoffset: 112.96001434326172;
+	-webkit-animation: lineAnimation 1s ease forwards 0.6s;
+	animation: lineAnimation 1s ease forwards 0.6s;
+}
+.hero__title path:nth-child(6) {
+	/* b */
+	stroke-dasharray: 222.0695037841797;
+	stroke-dashoffset: 222.0695037841797;
+	-webkit-animation: lineAnimation 1s ease forwards 0.3s;
+	animation: lineAnimation 1s ease forwards 0.3s;
+}
+.hero__title path:nth-child(7) {
+	/* a */
+	stroke-dasharray: 219.40615844726562;
+	stroke-dashoffset: 219.40615844726562;
+	-webkit-animation: lineAnimation 1s ease forwards;
+	animation: lineAnimation 1s ease forwards;
+}
+
+@-webkit-keyframes lineAnimation {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes lineAnimation {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+@-webkit-keyframes fill {
+	from {
+		fill: transparent;
+	}
+	to {
+		fill: #ff764d;
+	}
+}
+@keyframes fill {
+	from {
+		fill: transparent;
+	}
+	to {
+		fill: #ff764d;
+	}
+}
+.hero__subtitle,
+.hero__description {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 1.275em;
+}
+
+.hero__subtitle {
+	font-size: var(--text-xl);
+	padding: 5rem 0 2rem 0;
+}
+
+@media (min-width: 36rem) {
+	.hero__title {
+		width: 20rem;
+	}
+}
+
+/* medium phone */
+@media (min-width: 48rem) {
+	.hero__link {
+		font-size: var(--text-lg);
+	}
+
+	.hero__title {
+		width: 25rem;
+	}
+
+	.hero__subtitle {
+		font-size: var(--text-2xl);
+		line-height: 1.075em;
+	}
+	.hero__description {
+		font-size: var(--text-lg);
+	}
+}
+
+@media (min-width: 62rem) {
+	.hero__title {
+		width: 30rem;
+	}
+}
+
+/* laptop */
+@media (min-width: 75rem) {
+	.hero__subtitle,
+	.hero__description {
+		width: 50%;
+	}
+	.hero__title {
+		width: 35rem;
+	}
+	.hero__link {
+		font-size: var(--text-xl);
+	}
+	.hero__subtitle {
+		font-size: var(--text-3xl);
+		line-height: 1.075em;
+	}
+	.hero__description {
+		font-size: var(--text-xl);
+	}
+}
+
+/* large desktop */
+@media (min-width: 99.25rem) {
+	.hero__title {
+		width: 50rem;
+	}
+	.hero__subtitle {
+		font-size: var(--text-4xl);
+		line-height: 1.075em;
+	}
+	.hero__description {
+		font-size: var(--text-2xl);
+	}
+}
+
+@media (min-width: 160rem) {
+	.hero__bg {
+		height: 55rem;
+	}
+	.hero__subtitle {
+		font-size: var(--text-6xl);
+		line-height: 1.075em;
+	}
+	.hero__description {
+		font-size: var(--text-4xl);
+	}
+}

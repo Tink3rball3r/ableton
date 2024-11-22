@@ -1,0 +1,149 @@
+:root {
+	--white: #fff;
+	--yellow: #fbffa7;
+	--pastel-purple: #d5b3ff;
+	--pastel-green: #b6ffc0;
+	--orange: #ff764d;
+	--purple: #d5b3ff;
+	--blue: #0000ff;
+	/* fonts */
+	--heading: "Clash Display", sans-serif;
+	--text: "Archivo", sans-serif;
+
+	/* font sizes */
+	--text-xs: 0.75rem;
+	--text-sm: 0.875rem;
+	--text-base: 1rem;
+	--text-lg: 1.125rem;
+	--text-xl: 1.25rem;
+	--text-2xl: 1.5rem;
+	--text-3xl: 1.875rem;
+	--text-4xl: 2.25rem;
+	--text-5xl: 3rem;
+	--text-6xl: 3.75rem;
+	--text-7xl: 4.5rem;
+	--text-8xl: 6rem;
+	--text-9xl: 8rem;
+}
+
+/* resets */
+
+body {
+	font-family: var(--text);
+	/* scroll-behavior: smooth; */
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+}
+ul {
+	list-style: none;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--heading);
+}
+
+/* globals */
+.container {
+	width: 100%;
+}
+.blue-text {
+	color: var(--blue);
+}
+
+.spacer {
+	margin: 2rem 0;
+}
+
+.arrow-right {
+	border: solid black;
+	border-width: 0 0.02rem 0.02rem 0;
+	display: inline-block;
+	padding: 0.25rem;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	--webkit-transform: (-45deg);
+}
+.arrow-right-white {
+	border: solid white;
+	border-width: 0 0.02rem 0.02rem 0;
+	display: inline-block;
+	padding: 0.25rem;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	--webkit-transform: (-45deg);
+}
+
+/* breakpoints */
+
+/* small phone */
+@media (min-width: 36rem) {
+	.container {
+		max-width: 36rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/* medium phone */
+@media (min-width: 48rem) {
+	.container {
+		max-width: 48rem;
+	}
+}
+
+/* tablet */
+@media (min-width: 62rem) {
+	.container {
+		max-width: 62rem;
+	}
+}
+
+/* laptop */
+@media (min-width: 75rem) {
+	.container {
+		max-width: 75rem;
+	}
+}
+
+/* desktop */
+@media (min-width: 97.5rem) {
+	.container {
+		max-width: 97.5rem;
+	}
+}
+
+/* large desktop */
+@media (min-width: 160rem) {
+	.container {
+		background-color: var(--white);
+		max-width: 90%;
+	}
+}
